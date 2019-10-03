@@ -3,6 +3,8 @@
 [Sweet shop site](https://www.federico1973r.com/cakeshop/index.html) is a responsive, one page site.
 
 ## Preview
+![Preview](/screenshot-img/cakeshop-img.jpg??raw=true)
+
 
 **[View Live Preview](https://www.federico1973r.com/cakeshop/index.html)**
 
