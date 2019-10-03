@@ -18,5 +18,5 @@ After downloading, simply edit the HTML and CSS files included with the template
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/Federico-ui/sweets-shop/issues) here on GitHub.
+Have a bug or an issue? [Open a new issue](https://github.com/Federico-ui/sweets-shop/issues) here on GitHub.
 
