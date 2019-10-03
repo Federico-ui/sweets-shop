@@ -1,0 +1,340 @@
+:root {
+    --mainPink: rgb(236, 132, 150);
+    --mainBlack: rgb(0, 0, 0);
+    --mainWhite: rgba(255, 255, 255, 0.972);
+    --pinkTrans: rgba(204, 17, 211, 0.5);
+    --titleBanner: rgba(255, 0, 106, 0.753);
+    --logoPurple: rgb(70, 33, 71)
+}
+
+body {
+    font-family: Caveat, cursive
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px
+}
+
+.navbar-toggler {
+    outline: 0 !important
+}
+
+.toggler-icon {
+    font-size: 2rem;
+    color: var(--mainPink)
+}
+
+.nav-link {
+    color: var(--mainPink);
+    transition: all 1s ease-in-out;
+    font-size: 1.9rem;
+    font-weight: 700
+}
+
+.nav-link:hover {
+    color: var(--mainBlack)
+}
+
+.navbar-phone {
+    font-size: 1.5rem
+}
+
+.cart-info__icon {
+    color: var(--mainBlack);
+    font-size: 1.3rem
+}
+
+.cart-info {
+    border: .1rem solid var(--mainBlack);
+    color: var(--mainBlack);
+    border-radius: .25rem;
+    padding: .4rem .6rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.cart-info:hover {
+    background: var(--mainPink);
+    border: var(--mainPink);
+    color: var(--mainWhite)
+}
+
+.cart-info:hover .cart-info__icon {
+    color: var(--mainWhite)
+}
+
+.max-height {
+    min-height: calc(100vh - 77.6px);
+    background: linear-gradient(var(--pinkTrans), var(--pinkTrans)), url(/img/banner.jpg) center/cover fixed no-repeat;
+    position: relative
+}
+
+.banner {
+    color: var(--mainWhite);
+    margin-top: -4rem
+}
+
+.banner-title {
+    color: var(--titleBanner);
+    font-size: 4rem;
+    font-weight: bolder
+}
+
+.banner-link {
+    color: var(--mainWhite);
+    font-size: 1.8rem;
+    border: .1rem solid var(--mainWhite)
+}
+
+.banner-link:hover {
+    color: var(--titleBanner);
+    border: .1rem solid var(--logoPurple);
+    background: var(--mainPink)
+}
+
+.about-button {
+    color: var(--logoPurple);
+    border: .1rem solid var(--mainPink);
+    font-size: 1.1rem
+}
+
+.p-text-about {
+    font-size: 1.6rem
+}
+
+.about-img__container {
+    position: relative
+}
+
+.about-img__container::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: .2rem double var(--mainPink);
+    z-index: -1;
+    transition: all 1s linear
+}
+
+.about-img__container:hover:before {
+    top: 0;
+    left: 0
+}
+
+.store {
+    background: var(--pinkTrans)
+}
+
+.filter-btn {
+    border: .13rem solid var(--mainWhite);
+    font-size: 1.3rem;
+    color: var(--mainWhite)
+}
+
+.filter-btn:hover {
+    color: var(--mainPink);
+    background: var(--mainWhite);
+    font-weight: 700
+}
+
+.search-box {
+    background: var(--pinkTrans);
+    color: var(--mainWhite);
+    border: .1rem solid var(--mainPink)
+}
+
+.single-item {
+    transition: all .3 linear
+}
+
+.single-item:hover {
+    box-shadow: 0 10px 15px #000
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.store-img {
+    transition: all 1s ease-in-out
+}
+
+.img-container:hover .store-img {
+    transform: scale(1.2)
+}
+
+.store-item-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: .75rem;
+    background: var(--pinkTrans);
+    border-top-left-radius: 1rem;
+    transition: all 1s ease-in-out;
+    transform: translate(100%, 100%)
+}
+
+.img-container:hover .store-item-icon {
+    transform: translate(0, 0);
+    color: var(--mainWhite);
+    font-size: 1.2rem
+}
+
+.services {
+    color: var(--mainWhite);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/bakery-bcg.jpg) center/cover fixed no-repeat
+}
+
+.service-title {
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    color: var(--mainPink)
+}
+
+.service-text {
+    word-spacing: .5rem;
+    font-size: 1.7rem
+}
+
+.cakes-text {
+    font-size: 1.3rem;
+    color: var(--logoPurple)
+}
+
+.btn-cake {
+    color: var(--titleBanner)
+}
+
+.price-cake {
+    color: var(--titleBanner);
+    font-size: 1.5rem;
+    font-weight: 700
+}
+
+.cart {
+    position: absolute;
+    min-height: 160px;
+    min-height: 10rem;
+    background: rgba(255, 255, 255, .5);
+    top: 0;
+    right: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    width: 0;
+    overflow: hidden
+}
+
+.show-cart {
+    width: 288px;
+    width: 18rem;
+    padding: 32px 24px;
+    padding: 2rem 1.5rem;
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg)
+}
+
+.cart-item-remove {
+    color: #ef7998;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out
+}
+
+.cart-item {
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out
+}
+
+.cart-item-remove:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #000
+}
+
+.cart-item-price {
+    font-size: 12.8px;
+    font-size: .8rem
+}
+
+.footer-title {
+    background: var(--pinkTrans)
+}
+
+.footer-contact {
+    background: var(--mainPink)
+}
+
+.footer-icon {
+    font-size: 1.7rem;
+    color: var(--mainWhite);
+    transition: all .4s ease-in-out
+}
+
+.footer-icon:hover {
+    color: var(--logoPurple)
+}
+
+.findus-footer-text {
+    font-size: 1.4rem
+}
+
+.footer-copyright {
+    font-size: 1.4rem;
+    background: rgba(0, 0, 0, .753);
+    color: var(--mainWhite)
+}
+
+.copyright-name {
+    color: var(--mainWhite);
+    font-size: 1.6rem;
+    font-weight: 700
+}
+
+@media screen and (max-width:768px) {
+    .services {
+        background: url(../img/bakery-bcg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    .service-title {
+        color: var(--mainWhite);
+        font-weight: 700;
+        background: var(--mainPink)
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .services {
+        background: url(../img/bakery-bcg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    .service-title {
+        color: var(--mainWhite);
+        font-weight: 700;
+        background: var(--mainPink)
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .services {
+        background: url(../img/bakery-bcg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    .service-title {
+        color: var(--mainWhite);
+        font-weight: 700;
+        background: var(--mainPink)
+    }
+}
