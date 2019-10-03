@@ -18,6 +18,5 @@ After downloading, simply edit the HTML and CSS files included with the template
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/stylish-portfolio/).
-
+Have a bug or an issue with this template? [Open a new issue](https://github.com/Federico-ui/sweets-shop/issues) here on GitHub.
 
